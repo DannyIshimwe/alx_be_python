@@ -15,8 +15,8 @@ def project_annual_savings(monthly_savings, interest_rate=0.05):
 
 def main():
     # Get user input for financial details
-    monthly_income = get_user_input("Enter your monthly income:5000 ")
-    monthly_expenses = get_user_input("Enter your total monthly expenses:4000 ")
+    monthly_income = get_user_input("Enter your monthly income:5000")
+    monthly_expenses = get_user_input("Enter your total monthly expenses:4000")
 
     # Calculate monthly savings
     monthly_savings = monthly_income - monthly_expenses
