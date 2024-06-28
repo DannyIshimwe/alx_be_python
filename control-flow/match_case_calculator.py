@@ -1,16 +1,17 @@
 # File: match_case_calculator.py
 
-def get_number(prompt):
-    while True:
-        try:
-            return int(input(prompt))
-        except ValueError:
-            print("Invalid input. Please enter a valid number.")
 def main():
-    # Prompt the user for input
-    num1 = get_number("Enter the first number: 10")
-    num2 = get_number("Enter the second number: 5")
+    try:
+        # Prompt the user for input and convert to int
+        num1 = int(input("Enter the first number: "))
+        num2 = int(input("Enter the second number: "))
+    except ValueError:
+        print("Invalid input. Please enter valid integers.")
+        return
+
+    # Prompt the user to choose an operation
     operation = input("Choose the operation (+, -, *, /): ")
+
     # Perform the calculation using match case
     match operation:
         case '+':
@@ -30,3 +31,6 @@ def main():
                 print("Cannot divide by zero.")
         case _:
             print("Invalid operation. Please choose from +, -, *, /.")
+
+if __name__ == "__main__":
+    main()
