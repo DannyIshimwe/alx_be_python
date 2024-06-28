@@ -9,8 +9,8 @@ def get_number(prompt):
 
 def main():
     # Prompt the user for input
-    num1 = get_number("Enter the first number: ")
-    num2 = get_number("Enter the second number: ")
+    num1 = get_number("Enter the first number: 10")
+    num2 = get_number("Enter the second number: 5")
     operation = input("Choose the operation (+, -, *, /): ")
 
     # Perform the calculation using match case
