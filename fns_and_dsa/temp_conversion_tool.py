@@ -5,10 +5,14 @@ CELSIUS_OFFSET = 32
 
 def convert_to_celsius(fahrenheit):
     """Convert Fahrenheit to Celsius using the global conversion factor."""
+    global FAHRENHEIT_TO_CELSIUS_FACTOR
+    global CELSIUS_OFFSET
     return (fahrenheit - CELSIUS_OFFSET) * FAHRENHEIT_TO_CELSIUS_FACTOR
 
 def convert_to_fahrenheit(celsius):
     """Convert Celsius to Fahrenheit using the global conversion factor."""
+    global CELSIUS_TO_FAHRENHEIT_FACTOR
+    global CELSIUS_OFFSET
     return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + CELSIUS_OFFSET
 
 def main():
